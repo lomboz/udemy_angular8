@@ -1,0 +1,13 @@
+<h2>Practicing Databinding</h2>
+<label>Username: 
+    <input type="text" 
+    class="form-control"
+    [(ngModel)]="username">
+</label>
+
+<button type="button" 
+    class="btn btn-primary" 
+    [disabled]="checkUsername()"
+    (click)="clearUsername()">Clear Username</button>
+
+    <p>{{username}}</p>
