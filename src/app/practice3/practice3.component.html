@@ -1,0 +1,11 @@
+<h2>Practice 3</h2>
+
+<button (click)="toggleParagraph()">Display Details</button>
+<p [ngStyle]="{display: getDisplayState()}" >Any Content</p>
+
+<h3>Click History</h3>
+<ul>
+<div *ngFor="let entry of clickHistory" [ngStyle]="{backgroundColor: getHistoryBackgroundColor(entry)}" 
+    [ngClass]="{'white-text': renderWhiteTextColor(entry)}">{{entry}}
+</div>    
+</ul>
