@@ -1,12 +1,30 @@
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-      <h1>Dies ist eine Seite zum lernen</h1>
+<div>
+  <div class="layout-row">
+    <h1>Dies ist eine Seite zum lernen</h1>
+    <div class="flex">
       <app-success-alert></app-success-alert>
+    </div>
+    <div class="flex-20">
       <app-warning-alert></app-warning-alert>
-      <app-servers></app-servers>
-      <app-user></app-user>
+    </div>
+    <app-servers></app-servers>
+    <app-user></app-user>
+  </div>
+  <div class="layout-column">
+    <div class="flex-66">
+      <mat-slider></mat-slider>
     </div>
   </div>
-</div>
+  <div class="layout-column">
+    <p>
+      <mat-icon aria-hidden="false" aria-label="Example home icon">home123</mat-icon>
+    </p>
+  </div>
+  <div class="layout-column">
+    <p>
+      <mat-icon svgIcon="thumbs-up" aria-hidden="false" aria-label="Example thumbs up SVG icon"></mat-icon>
+    </p>
+  </div>
 
+
+</div>

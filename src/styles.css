@@ -1,8 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
-body{
-    background-color: rgb(255, 255, 255);
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.alert-danger {
+    background-color: #f44336; /* Red */
 }
-
+.alert-warning {
+    background-color: orange; /* Orange */
+}
+.alert-success {
+    background-color: #36f456;  
+} 
 .alert{
-    font-weight: bold;
+    padding: 20px;
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
 }
